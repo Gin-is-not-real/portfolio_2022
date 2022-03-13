@@ -1,4 +1,5 @@
 <section id="projects">
+    <h1 class="anchor" id="anch-projects"></h1>
     
     <div class="bg-container">
         <img src="public/images/bookshelf1920.jpg" alt="">

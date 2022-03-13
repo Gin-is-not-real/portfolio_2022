@@ -1,4 +1,6 @@
 <section id="home">
+    <h1 class="anchor" id="anch-home"></h1>
+
     <div class="bg-container">
         <div>
             <!-- for help to postion the <img> -->

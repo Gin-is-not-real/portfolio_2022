@@ -22,6 +22,7 @@
         ?>
     </main>
 
+    <h1 id="contacts"></h1>
     <?php include 'footer.php'; ?>
 
 

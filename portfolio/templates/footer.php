@@ -1,5 +1,6 @@
 <footer id="general-footer" class="shaded">
-    
+    <h1 class="anchor" id="anch-footer"></h1>
+
     <section id="footer-about">
         <header>
             <h4>Nina Pariat</h4>
