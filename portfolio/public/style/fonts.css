@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Gotu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@100;200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap'); */
+/* font-family: 'Architects Daughter', cursive; */
+html, html * {
+    font-size: 16px;
+    font-family: 'Gotu', sans-serif;
+    font-family: 'Advent Pro', sans-serif;
+    /* font-family: 'Saira', sans-serif; */
+    /* font-family: 'Syne Mono', monospace; */
+
+    font-weight: initial;
+
+    letter-spacing: 0.05em;
+    line-height: 1.35em;
+}
+
+h1 {
+    font-size: 3em;
+}
+h2 {
+    font-size: 2.8em;
+}
+#home h2  {
+    font-size: 1.8em !important;
+}
+h3 {
+    font-size: 2.2em;
+}
+h4 {
+    font-size: 2em;
+}
+
+.project_card h3 {
+    /* font-size: 1.5em !important; */
+}
+.project_card h4 {
+    font-size: 1.2em !important;
+}
+.project_card p {
+    font-size: 0.9em !important;
+    padding: 0.5em;
+}
+.project_card i {
+    font-size: 1.5em;
+}
+
+#nav-social i {
+    /* font-size: 2em; */
+    font-size: 1.5em;
+}
+
+#home-container ul {
+    font-size: 1.5em;
+}

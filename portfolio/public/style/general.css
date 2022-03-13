@@ -1,0 +1,93 @@
+html {
+    --home-bg: #242424;
+    --trans-black: #000000e0;
+    --header-h: 16vh;
+    background-color: var(--home-bg);
+}
+html, html * {
+    margin: 0;
+    padding: 0;
+    color: white;
+
+}
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+
+/* ////////////////////////////////////////////// */
+/* HEADER */
+#general-header {
+    position: fixed;
+    height: var(--header-h);
+    width: 98vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+
+/* logo */
+figure#main-logo {
+    height: var(--header-h);
+    width: var(--header-h);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* lists */
+#general-header ul {
+    list-style: none;
+    box-sizing: content-box;
+    display: flex;
+    justify-content: center;
+
+    gap: 1em;
+}
+#general-header div {
+    display: flex;
+    gap: 1em;
+}
+/* nav social */
+#nav-social {
+    margin-right: 2em;
+    display: flex;
+    justify-content: center;
+}
+#nav-social ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+/* site navigation */
+#main-navigation {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+#main-navigation ul {
+    margin: 0 1em;
+}
+#general-header a, #main-navigation {
+    color: white;
+}
+
+
+
+/* //////////////////////////////////////////////// */
+/* FOOTER */
+#general-footer {
+    background-color: black;
+    padding: 1em;
+}
+#general-footer #footer-about > *:not(hr){
+    padding: 1em;
+}
+#general-footer p  {
+    padding: 0.2em;
+}
