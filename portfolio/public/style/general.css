@@ -75,7 +75,9 @@ figure#main-logo {
 }
 #general-header a, #main-navigation {
     color: white;
+    text-decoration: none;
 }
+
 
 
 

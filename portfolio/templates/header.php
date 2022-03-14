@@ -7,9 +7,9 @@
     <div>
         <nav id="main-navigation">
             <ul>
-                <li><a href="#anch-footer">contacts</a></li>
-                <li><a href="#anch-home">home</a></li>
-                <li><a href="#anch-projects">projects</a></li>
+                <li><a id="link-home" href="#anch-home">home</a></li>
+                <li><a id="link-projects" href="#anch-projects">projects</a></li>
+                <li><a id="link-footer" href="#anch-footer">contacts</a></li>
             </ul>
         </nav>
 

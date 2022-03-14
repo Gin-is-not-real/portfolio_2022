@@ -7,6 +7,7 @@ let headerElements = [
 ];
 // getComputedStyles(headerElements);
 
+
 // PROJECTS
 let cards = document.querySelectorAll('.project_card');
 let show = document.querySelector('.project_show');
@@ -15,10 +16,65 @@ let cardHeight = parseFloat(window.getComputedStyle(cards[0]).height.replace('px
 console.log(cardHeight);
 
 
+// MAIN NAVIGATION
+let mainNavLinks = header.querySelectorAll('#main-navigation a');
+console.log(mainNavLinks);
+
+
+/*
+    TESTS SCROLL
+*/
+let anchors = document.querySelectorAll('.anchor');
+console.log(anchors);
+
+// define the limit to define if an element is visible 
+let apparitionLimit = screen.height/2;
+
+function checkForActiveSection() {
+    //loop on anchors and check if it's visible
+    for(let i = 0; i < anchors.length; i++) {
+        let anchor = anchors[i];
+        let y = getViewportY(anchor);
+
+        if(y > 0 && y < screen.height) {
+
+            if(y < apparitionLimit) {
+                return i;
+
+            }
+            else {
+                return i-1;
+
+            }
+        } 
+    }
+}
+
+
+function getViewportY(elt) {
+    let positions = elt.getBoundingClientRect();
+    let viewportY = (positions.y || positions.top);
+    return viewportY;
+}
+
+function activeSection(index) {
+    for(let i = 0; i < mainNavLinks.length; i++) {
+        if(i === index) {
+            mainNavLinks[i].classList.add('active-navlink');
+        }
+        else {
+            mainNavLinks[i].classList.remove('active-navlink');
+        }
+    }
+}
+
+
 
 /*
     FUNCTIONS
 */
+
+
 function getComputedStyles(array) {
     console.log(elt)
     array.forEach(elt => {
@@ -27,6 +83,7 @@ function getComputedStyles(array) {
         // }
     })
 }
+
 
 // header
 function hideElements(elements) {
@@ -92,6 +149,20 @@ header.addEventListener('mouseleave', function() {
     hideElements(headerElements);
 })
 
+
+// header and nav when scroll
+document.addEventListener('scroll', function(e) {
+    // lastKnownScrollPosition = window.scrollY;
+
+    let active = checkForActiveSection();
+    activeSection(active);
+
+    showElements(headerElements);
+
+    window.setTimeout(function() {
+        hideElements(headerElements);
+    }, 2000);
+});
 
 // cards
 cards.forEach(card => {
