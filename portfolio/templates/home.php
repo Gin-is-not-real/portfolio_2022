@@ -8,7 +8,7 @@
         <img src="public/images/pexel_keyboard_large.jpg" alt="">
     </div>
 
-    <div id="void-header" class="shaded"></div>
+    <div class="void-header shaded"></div>
 
     <div class="container" id="home-container">
         <header>

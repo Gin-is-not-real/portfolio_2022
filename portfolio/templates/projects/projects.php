@@ -5,8 +5,6 @@
         <img src="public/images/bookshelf1920.jpg" alt="">
     </div>
 
-    <!-- <div id="void-header"></div> -->
-
     <header class="shaded">
         <h2>Projects</h2>
     </header>

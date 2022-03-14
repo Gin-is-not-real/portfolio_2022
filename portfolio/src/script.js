@@ -18,17 +18,15 @@ console.log(cardHeight);
 
 // MAIN NAVIGATION
 let mainNavLinks = header.querySelectorAll('#main-navigation a');
-console.log(mainNavLinks);
+// console.log(mainNavLinks);
 
-
-/*
-    TESTS SCROLL
-*/
 let anchors = document.querySelectorAll('.anchor');
-console.log(anchors);
+// console.log(anchors);
 
 // define the limit to define if an element is visible 
 let apparitionLimit = screen.height/2;
+
+
 
 function checkForActiveSection() {
     //loop on anchors and check if it's visible
@@ -51,6 +49,10 @@ function checkForActiveSection() {
 }
 
 
+
+/*
+    FUNCTIONS
+*/
 function getViewportY(elt) {
     let positions = elt.getBoundingClientRect();
     let viewportY = (positions.y || positions.top);
@@ -67,12 +69,6 @@ function activeSection(index) {
         }
     }
 }
-
-
-
-/*
-    FUNCTIONS
-*/
 
 
 function getComputedStyles(array) {
