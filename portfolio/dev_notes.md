@@ -1,7 +1,13 @@
 # portfolio 2022
 - php
-- javascript
+- javascript front/back
 - json
+
+
+
+## derniéres modifications
+- 12/03/22: navigation et ancres
+
 
 
 ## todo
@@ -9,11 +15,14 @@
 
 [ ] partie contacts
     [X] provisoirement dans le footer
+    [ ] formulaire
+    [ ] envoi de mail
 
-[X] navigation et ancres
-
-[ ] system du header
+[X] system du header
     [ ] allonger le temp de disparition
+
+[ ] optimisation
+    [ ] fetch json -> je récupere un objet, voir si ce pas mieux de recuperer directement la reponse html ??
 
 
 
@@ -43,7 +52,11 @@
 - src/:
     - les scripts php et js:
         - get_data.php
-        - script.js
+        - header.js:
+            - effects front du header et mise à jour du lien de navigation actif
+        - projects.js:
+            - effects front des cards de la partie projet
+            - récuperation et affichage des données json des projets
 
 - templates/:
     - projects/:

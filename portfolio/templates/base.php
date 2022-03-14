@@ -29,5 +29,6 @@
 </body>
 
 <script src="src/script.js"></script>
+<script src="src/effects.js"></script>
 
 </html>
