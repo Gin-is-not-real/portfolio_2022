@@ -13,6 +13,7 @@ let cardHeight = parseFloat(window.getComputedStyle(cards[0]).height.replace('px
  */
 
 function showProject(id) {
+    console.log(id)
     let phpScriptUrl = new URL(document.location.href + 'src/get_data.php');
     phpScriptUrl.searchParams.append('id', id);
 
@@ -57,7 +58,7 @@ cards.forEach(card => {
         card.content.style.transition = "height 0.5s";
         card.content.style.height = cardHeight + "px";
     });
-    
+
     // displays the project in large format
     card.button.addEventListener('click', function() {
         showProject(card.id);
