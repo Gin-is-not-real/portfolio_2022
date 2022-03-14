@@ -28,7 +28,7 @@
 
 </body>
 
-<script src="src/script.js"></script>
-<script src="src/effects.js"></script>
+<script src="src/header.js"></script>
+<script src="src/projects.js"></script>
 
 </html>

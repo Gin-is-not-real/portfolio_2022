@@ -11,6 +11,7 @@ let anchors = document.querySelectorAll('.anchor');
 
 // limit to define if an element is visible 
 let activeElementThreshold = screen.height/2;
+let isHoverHeader = false;
 
 
 ////////////////////////////////////////////////////////////
@@ -24,15 +25,31 @@ function pageScrollHandler() {
     let active = getIndexOfActiveElement(anchors, activeElementThreshold);
     updateActiveNavigationLinks(mainNavigationLinks, active);
 
-    showHeader(headerElements);
+    showHeader();
+    hideHeader();
+}
 
-    console.log(window.scrollY);
 
-    if(window.scrollY !== 0 ) {
-        window.setTimeout(function() {
-            hideHeader(headerElements);
-        }, 3000);
+/**
+ * 
+ */
+ function hideHeader() {
+    if( (window.scrollY !== 0) && (!isHoverHeader)) {
+        headerElements.forEach(elt => {
+            elt.style.transition = "opacity 4s 2s ";
+            elt.style.opacity = "0";
+        })
+        header.style.transition = "opacity 4s 1.5s";
+        header.style.opacity = "0";
     }
+}
+function showHeader() {
+    headerElements.forEach(elt => {
+        elt.style.transition = "opacity 0.2s";
+        elt.style.opacity = "100";
+    })
+    header.style.transition = "opacity 0.5s";
+    header.style.opacity = "100";
 }
 
 
@@ -77,27 +94,6 @@ function updateActiveNavigationLinks(links, index) {
     }
 }
 
-/**
- * 
- * @param {*} elements 
- */
-function hideHeader(elements) {
-    elements.forEach(elt => {
-        elt.style.transition = "opacity 2s";
-        elt.style.opacity = "0";
-    })
-    header.style.transition = "opacity 1.5s";
-    header.style.opacity = "0";
-}
-function showHeader(elements) {
-    elements.forEach(elt => {
-        elt.style.transition = "opacity 0.5s";
-        elt.style.opacity = "100";
-    })
-    header.style.transition = "opacity 1s";
-    header.style.opacity = "100";
-}
-
 
 
 //////////////////////////////////////////////////////////////
@@ -107,7 +103,9 @@ document.addEventListener('scroll', function(e) {
 });
 header.addEventListener('mouseover', function() {
     showHeader(headerElements);
+    isHoverHeader = true;
 })
 header.addEventListener('mouseleave', function() {
     hideHeader(headerElements);
+    isHoverHeader = false;
 })
