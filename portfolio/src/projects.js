@@ -57,6 +57,7 @@ cards.forEach(card => {
         card.content.style.transition = "height 0.5s";
         card.content.style.height = cardHeight + "px";
     });
+    
     // displays the project in large format
     card.button.addEventListener('click', function() {
         showProject(card.id);

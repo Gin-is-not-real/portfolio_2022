@@ -32,8 +32,7 @@
 
     <footer>
         <div id="see_projects" class="shaded">
-            <!-- <input type="button" value="in progress"> -->
-            <input type="button" class="rect-button" value="VOIR LES PROJETS">
+            <a class="rect-button" id="link-projects" href="#anch-projects">VOIR LES PROJETS</a>
         </div>
     </footer>
 

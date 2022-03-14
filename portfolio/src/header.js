@@ -102,10 +102,10 @@ document.addEventListener('scroll', function(e) {
     pageScrollHandler();
 });
 header.addEventListener('mouseover', function() {
-    showHeader(headerElements);
     isHoverHeader = true;
+    showHeader();
 })
 header.addEventListener('mouseleave', function() {
-    hideHeader(headerElements);
     isHoverHeader = false;
+    hideHeader();
 })

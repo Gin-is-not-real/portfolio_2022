@@ -17,6 +17,7 @@
     border: 1px solid white;
     background-color: #ffffff0a;
     color: white;
+    text-decoration: none;
 }
 .hidden {
     visibility: hidden;
@@ -32,10 +33,10 @@
     transition: background-color 1s cubic-bezier(.68,-0.55,.18,2.02);
     background-color: #ffffff3b;
 }
-.card-button:hover {
+/* .card-button:hover {
     animation-duration: 0.5s;
     animation-name: btn-hover;
-}
+} */
 #home-container ul:hover, #home-container h1:hover, #home-container h2:hover {
     transition: letter-spacing 0.8s;
     letter-spacing: 0.15em;
