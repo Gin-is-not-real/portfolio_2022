@@ -27,6 +27,7 @@
 
 
 </body>
+<script src="src/accessData.js"></script>
 
 <script src="src/header.js"></script>
 <script src="src/projects.js"></script>

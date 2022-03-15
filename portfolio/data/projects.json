@@ -3,17 +3,26 @@
         {
             "id": 0,
             "title": "Brick Out",
-            "tags": ["jeux", "javascript", "php"],
+            "tags": ["jeux", "javascript", "php", "poo"],
             "description": "Un jeu de casse-brique en Javascript vanilla, avec un peu de php pour l'enregistrement des scores",
             "githubLink": "https://github.com/Gin-is-not-real/BRICK_OUT/tree/mobileVersion",
             "webLink": "https://ninapariat.space/brickout/"
         },
         {
             "id": 1,
-            "title": "Gin Synthesizers 2021",
+            "title": "MiniSynths 2021",
+            "tags": ["audio", "javascript", "poo"],
             "description": "Divers tests de petits synthétiseurs en JS, notamment Web Components.",
             "githubLink": "https://github.com/Gin-is-not-real/MINISYNTHS/tree/master",
             "webLink": "https://ninapariat.space/gin-synthesizers"
+        },
+        {
+            "id": 2,
+            "title": "Portfolio 2022",
+            "tags": ["front", "javascript", "php", "ajax", "json"],
+            "description": "Le portfolio sur lequel vous vous trouvez",
+            "githubLink": "void",
+            "webLink": "void"
         }
     ]
 }

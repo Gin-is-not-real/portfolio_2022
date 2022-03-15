@@ -5,42 +5,36 @@ let show = document.querySelector('.project_show');
 
 let cardHeight = parseFloat(window.getComputedStyle(cards[0]).height.replace('px', ''));
 
-
 ////////////////////////////////////////////////////////////
 // FUNCTIONS
-/**
- * Fetch json project data by calling a php script, and display the project show template after having completed 
- */
-
-function showProject(id) {
-    console.log(id)
-    let phpScriptUrl = new URL(document.location.href + 'src/get_data.php');
-    phpScriptUrl.searchParams.append('id', id);
-
-    fetch(phpScriptUrl)
-    .then(response => response.text())
-    // .then(response => response)
+function fetchAndShowProject(id) {
+    fetch('data/projects.json')
+    .then(response => response.json())
     .then(json => {
-        let prj = JSON.parse(json).projects[id];
-        console.log(prj);
+        console.log(json)
 
-        show.querySelector('h3').textContent = prj.title;
-        show.querySelector('h4').textContent = "";
-
-        if(prj.tags !== undefined) {
-            prj.tags.forEach(tag => {
-                show.querySelector('h4').textContent += tag + ', ';
-            });
-        }
-
-        show.querySelector('p').textContent = prj.description;
-        show.querySelector('.show-nav .github-link').href = prj.githubLink;
-        show.querySelector('.show-nav .web-link').href = prj.webLink;
-
-        show.classList.remove("hidden");
+        let prj = json.projects[id];
+        console.log(prj)
+        displayProject(prj);
     })
 }
 
+function displayProject(project) {
+    show.querySelector('h3').textContent = project.title;
+    show.querySelector('h4').textContent = "";
+
+    if(project.tags !== undefined) {
+        project.tags.forEach(tag => {
+            show.querySelector('h4').textContent += tag + ', ';
+        });
+    }
+
+    show.querySelector('p').textContent = project.description;
+    show.querySelector('.show-nav .github-link').href = project.githubLink;
+    show.querySelector('.show-nav .web-link').href = project.webLink;
+
+    show.classList.remove("hidden");
+}
 
 //////////////////////////////////////////////////////////////
 // EVENTS LISTENERS
@@ -59,9 +53,8 @@ cards.forEach(card => {
         card.content.style.height = cardHeight + "px";
     });
 
-    // displays the project in large format
     card.button.addEventListener('click', function() {
-        showProject(card.id);
+        fetchAndShowProject(card.id);
     });
 });
 

@@ -4,14 +4,17 @@
 - json
 
 
-
-## derniéres modifications
+## dernières modifications
 - 12/03/22: navigation et ancres
-
+- 14/03/22: structure dossier, clean code et fix front fx
+- 15/03/22: modification du la recuperation des données json (js fetch le fichier json directement)
 
 
 ## todo
 [ ] back office pour les projets
+    [ ] front
+    [ ] dataAccess
+        [ ] manipulation données en php et js avec fetch
 
 [ ] partie contacts
     [X] provisoirement dans le footer
@@ -24,6 +27,72 @@
 [ ] optimisation
     [ ] fetch json -> je récupere un objet, voir si ce pas mieux de recuperer directement la reponse html ??
 
+
+## fonctionnement 
+### ajax
+
+**javascript:**
+``` 
+// requête du fichier json
+fetch(jsonFilePath)
+
+// formatage du contenu de la reponse en objet
+.then(response => response.json())
+
+.then(obj => {
+    // appelle de la fonction de traitement, soit display...(obj)
+})
+```
+
+
+### fonctionnalitées (à revoir)
+- Lister les projets:
+    - declenchement:                chargement du site
+    - parametres:                   
+    - recuperation de la donnée:    PHP: _list.php decode le contenu du fichier data
+    - donnée:                       objet projects
+    - exploitation:                 PHP: _list.php boucle sur l'objet et require _card.php pour chaque projet
+
+
+- Afficher un projet:
+    - declenchement:                clic sur une carte
+    - parametres:                   id de la carte
+    - recuperation de la donnée:    JS: fetch le fichier data, et passe l'objet dont l'id correspond à la fonction de callback
+    - donnée:                       obj project 
+    - exploitation:                 JS: rempli le html et retire la classe hidden 
+
+
+BACK OFFICE
+- Lister les projets:
+    - declenchement:    chargement de la page
+    - parametres:       
+    - recuperation de la donnée:    PHP: _list.php decode le contenu du fichier data
+    - donnée:                       objet projects 
+    - exploitation:                 PHP: _list.php boucle sur l'objet et require _card.php pour chaque projet
+
+
+- Afficher un projet:
+    - declenchement:    clic sur une carte
+    - parametres:       id du projet
+    - recuperation de la donnée:    JS: fetch script php en passant l'id, PHP: decode le fichier data
+    - donnée:                       string projects 
+    - exploitation:                 JS: transforme la reponse en texte, parse la reponse en objet, rempli le html et retire la classe hidden
+
+
+- Ajouter projet (formulaire)
+    - declenchement:                submit
+    - parametres:                   inputs
+    - recuperation de la donnée:    PHP: recupere les donnée du formulaire
+    - donnée:                       POST projet 
+    - exploitation:                 
+
+
+- Modifier projet (formulaire)
+    - declenchement:                submit  
+    - parametres:                   inputs
+    - recuperation de la donnée:    PHP: recupere les donnée du formulaire
+    - donnée:                       POST projet 
+    - exploitation:                 
 
 
 ## structure (14/03/22)
