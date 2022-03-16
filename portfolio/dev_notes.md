@@ -11,6 +11,11 @@
 
 
 ## todo
+[ ] front
+    [ ] show: style pas trés clair (noir sur noir)
+    [ ] show: ajouter bouton close 
+    [X] header ne réagit pas toujours au scroll *16 mars 22: ajout d'un setTimeout dans le scrollHandler event*
+
 [ ] back office pour les projets
     [ ] front
     [ ] dataAccess

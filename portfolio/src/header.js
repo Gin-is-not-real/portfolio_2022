@@ -26,14 +26,25 @@ function pageScrollHandler() {
     updateActiveNavigationLinks(mainNavigationLinks, active);
 
     showHeader();
-    hideHeader();
+    window.setTimeout(hideHeader, 300);
 }
 
 
 /**
- * 
+ * Made appear the header by increase opacity in a transition
  */
- function hideHeader() {
+function showHeader() {
+    headerElements.forEach(elt => {
+        elt.style.transition = "opacity 0.2s";
+        elt.style.opacity = "100";
+    })
+    header.style.transition = "opacity 0.5s";
+    header.style.opacity = "100";
+}
+/**
+ * Made disappear the header by decrease opacity in a transition, except if the mouse hover it, or if scroll position y is 0 
+ */
+function hideHeader() {
     if( (window.scrollY !== 0) && (!isHoverHeader)) {
         headerElements.forEach(elt => {
             elt.style.transition = "opacity 4s 2s ";
@@ -43,14 +54,7 @@ function pageScrollHandler() {
         header.style.opacity = "0";
     }
 }
-function showHeader() {
-    headerElements.forEach(elt => {
-        elt.style.transition = "opacity 0.2s";
-        elt.style.opacity = "100";
-    })
-    header.style.transition = "opacity 0.5s";
-    header.style.opacity = "100";
-}
+
 
 
 /**
