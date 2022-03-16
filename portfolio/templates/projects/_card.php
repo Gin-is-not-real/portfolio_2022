@@ -1,12 +1,16 @@
 <?php
+// POST[prj] transmit from _list.php when loop on projects
 $project = $_POST['prj'];
 
-$tags_str = "";
 
+// list tags from array
+$tags_str = "";
 if(property_exists($project, "tags")) {
+
     foreach($project->tags as $key => $value) {
         $tags_str .= $value . ", ";
     }
+    // preg_replace('([^abc][ \s])$', '', $tags_str);
 }
 
 ?>
