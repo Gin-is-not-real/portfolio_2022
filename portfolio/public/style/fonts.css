@@ -24,9 +24,6 @@ h1 {
 h2 {
     font-size: 2.8em;
 }
-#home h2  {
-    font-size: 1.8em !important;
-}
 h3 {
     font-size: 2.2em;
 }
@@ -34,12 +31,26 @@ h4 {
     font-size: 2em;
 }
 
-.project_card h3 {
-    /* font-size: 1.5em !important; */
+
+#nav-social i {
+    font-size: 1.5em;
 }
+
+
+#home h2  {
+    font-size: 1.8em !important;
+}
+#home-container ul {
+    font-size: 1.5em;
+}
+
+
 .project_card h4 {
     font-size: 1.2em !important;
 }
+#show-subtitle {
+    font-size: 1.2em !important;
+} 
 .project_card p {
     font-size: 0.9em !important;
     padding: 0.5em;
@@ -48,11 +59,5 @@ h4 {
     font-size: 1.5em;
 }
 
-#nav-social i {
-    /* font-size: 2em; */
-    font-size: 1.5em;
-}
 
-#home-container ul {
-    font-size: 1.5em;
-}
+

@@ -24,6 +24,6 @@ if(property_exists($project, "tags")) {
     </div>
 
     <div>
-        <input type="button" class="card-button" value="VOIR PLUS">
+        <input type="button" class="card-button shaded" value="VOIR PLUS">
     </div>
 </div>

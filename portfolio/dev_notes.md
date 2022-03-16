@@ -8,24 +8,24 @@
 - 12/03/22: navigation et ancres
 - 14/03/22: structure dossier, clean code et fix front fx
 - 15/03/22: optimisation de la recuperation des données json (js fetch le fichier json directement)
+- 16/03/22: fix et améliorations style et effets (header scroll effect, "show" plus clair)
 
 
 ## todo
-[ ] front
-    [ ] show: style pas trés clair (noir sur noir)
+[ ] front:
+    [ ] card: (?) ne pas afficher le lien du site si il n'existe pas 
     [ ] show: ajouter bouton close 
-    [X] header ne réagit pas toujours au scroll *16 mars 22: ajout d'un setTimeout dans le scrollHandler event*
 
-[ ] back office pour les projets
-    [ ] front
-    [ ] dataAccess
-        [ ] manipulation données en php et js avec fetch
-
-[ ] partie contacts
+[ ] partie contacts:
     [X] provisoirement dans le footer
     [ ] formulaire
     [ ] envoi de mail
 
+[ ] back office pour les projets
+    [ ] front
+    [ ] data: mettre les données en base SQL, mais garder AJAX pour certaines opérations
+        [ ] creer la bdd
+        [ ] systeme de stockage temporaire des données en json
 
 [ ] optimisation
     [ ] fetch json -> je récupere un objet, voir si ce pas mieux de recuperer directement la reponse html ?? 

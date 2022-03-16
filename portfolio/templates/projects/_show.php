@@ -1,8 +1,8 @@
 <div class="project_show hidden" id="">
-    <div class="show-content">
+    <div class="show-content shaded">
         <header>
-            <h3></h3>
-            <h4></h4>
+            <h3 id="show-title"></h3>
+            <h4 id="show-subtitle"></h4>
         </header>
 
         <div>

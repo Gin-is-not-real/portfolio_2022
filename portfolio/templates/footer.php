@@ -1,7 +1,7 @@
 <footer id="general-footer" class="shaded">
     <h1 class="anchor" id="anch-footer"></h1>
 
-    <section id="footer-about">
+    <div id="footer-about">
         <header>
             <h4>Nina Pariat</h4>
             <h5><i class="fab fa-periscope"></i>Cosne-sur-loire, Nevers</h5>
@@ -17,6 +17,6 @@
             <p><i class="fab fa-github"></i>GitHub: <a href="https://github.com/Gin-is-not-real">Gin-is-not-real</a></p>
         </div>
 
-    </section>
+    </div>
 
 </footer>
