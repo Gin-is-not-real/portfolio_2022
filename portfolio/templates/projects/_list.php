@@ -4,6 +4,7 @@ $projects = json_decode(file_get_contents($file_path))->projects;
 
 
 foreach ($projects as $key => $project) {
+    // stocke le projet en POST pour qu'il soit récupéré par _card.php
     $_POST['prj'] = $project;
     
     echo "<li>";

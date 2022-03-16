@@ -7,7 +7,7 @@
 ## dernières modifications
 - 12/03/22: navigation et ancres
 - 14/03/22: structure dossier, clean code et fix front fx
-- 15/03/22: modification du la recuperation des données json (js fetch le fichier json directement)
+- 15/03/22: optimisation de la recuperation des données json (js fetch le fichier json directement)
 
 
 ## todo
@@ -21,11 +21,9 @@
     [ ] formulaire
     [ ] envoi de mail
 
-[X] system du header
-    [ ] allonger le temp de disparition
 
 [ ] optimisation
-    [ ] fetch json -> je récupere un objet, voir si ce pas mieux de recuperer directement la reponse html ??
+    [ ] fetch json -> je récupere un objet, voir si ce pas mieux de recuperer directement la reponse html ?? 
 
 
 ## fonctionnement 
