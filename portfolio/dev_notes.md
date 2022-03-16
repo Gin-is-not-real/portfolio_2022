@@ -10,11 +10,36 @@
 - 15/03/22: optimisation de la recuperation des données json (js fetch le fichier json directement)
 - 16/03/22: fix et améliorations style et effets (header scroll effect, "show" plus clair)
 
+## projets à mettre
+[ ] annonces php:
+    [ ] fix:
+        [ ] header au chargement
+        [ ] empecher surcharge de la bdd (suppression user au bout d'un delai)
+    [ ] github ok
+    [ ] en ligne
+
+[ ] modulars:
+    [ ] github
+    [ ] en ligne
+
+[ ] gin2021_database_manager:
+    [ ] github
+    [ ] en ligne
+
+[ ] (??) json_tests:
+    [ ] github
+    [ ] en ligne
 
 ## todo
-[ ] front:
-    [ ] card: (?) ne pas afficher le lien du site si il n'existe pas 
+[ ] portfolio:
+    [ ] lister les projets à mettre
+    [ ] verifier les repositories et la version
+    [ ] voir pour mettre en ligne
+
+[ ] _projets:
     [ ] show: ajouter bouton close 
+    [ ] show: (?) ne pas afficher le lien du site si il n'existe pas 
+    [ ] systeme pour la description: courte sur la carte et longue sur show  
 
 [ ] partie contacts:
     [X] provisoirement dans le footer

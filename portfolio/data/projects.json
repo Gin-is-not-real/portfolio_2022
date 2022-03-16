@@ -11,7 +11,7 @@
         {
             "id": 1,
             "title": "MiniSynths 2021",
-            "tags": ["audio", "javascript", "poo"],
+            "tags": ["audio", "js", "poo"],
             "description": "Divers tests de petits synthétiseurs en JS, notamment Web Components.",
             "githubLink": "https://github.com/Gin-is-not-real/MINISYNTHS/tree/master",
             "webLink": "https://ninapariat.space/gin-synthesizers"
@@ -19,10 +19,26 @@
         {
             "id": 2,
             "title": "Portfolio 2022",
-            "tags": ["front", "javascript", "php", "ajax", "json"],
+            "tags": ["js", "php", "ajax", "json"],
             "description": "Le portfolio sur lequel vous vous trouvez",
-            "githubLink": "void",
-            "webLink": "void"
+            "githubLink": "https://github.com/Gin-is-not-real/portfolio_2022/tree/master",
+            "webLink": "#"
+        },
+        {
+            "id": 3,
+            "title": "projet annonces",
+            "tags": ["js", "php", "jointures sql"],
+            "description": "Projet de formation: créer un site de petites annonces. J'ai choisi pour thème la vente de matériel de musiques.",
+            "githubLink": "#",
+            "webLink": "#"
+        },
+        {
+            "id": 4,
+            "title": "Modular synths",
+            "tags": ["js", "audio", "POO"],
+            "description": "Gros projet de synthétiseur modulaire démarrée lors de mes début en js. Je découvrait la Programmation Orientée Objet, et essayai de trouver une architecture de classes la plus modulable possible. Il y as plusieures versions inachevées de ce projet, que j'ai hate de reprendre mais qui est trés gourmand en terme de temp !",
+            "githubLink": "#",
+            "webLink": "#"
         }
     ]
 }
