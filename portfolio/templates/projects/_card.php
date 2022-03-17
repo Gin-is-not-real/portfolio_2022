@@ -6,14 +6,22 @@ $project = $_POST['prj'];
 // list tags from array
 $tags_str = "";
 if(property_exists($project, "tags")) {
-
     foreach($project->tags as $key => $value) {
         $tags_str .= $value . ", ";
     }
-    // preg_replace('([^abc][ \s])$', '', $tags_str);
+    // remove ", " from the end of the string
+    substr($tags_str, 0, -2);
 }
 
+
+// 230 chars max
+$description = $project->description;
+if(strlen($description) > 225) {
+    substr($description, 0, 255);
+    $description .= " ...";
+}
 ?>
+
 
 <div class="project_card shaded" id="<?=$project->id; ?>">
     <div class="card-content">
@@ -23,7 +31,7 @@ if(property_exists($project, "tags")) {
         </header>
 
         <div>
-            <p><?= $project->description; ?></p>
+            <p><?= $description; ?></p>
         </div>
     </div>
 

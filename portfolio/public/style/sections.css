@@ -156,6 +156,7 @@
     text-align: center;
 }
 .project_card p {
+    max-height: 100%;
     padding: 0.5em;
     text-align: center;
 }
@@ -164,7 +165,7 @@
     overflow: hidden;
 }
 .card-content div {
-    height: 64%;
+    height: 58%;
     display: flex;
     justify-content: center;
     padding: 0.5em 0.8em;
