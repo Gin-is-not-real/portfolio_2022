@@ -12,11 +12,29 @@
 - 17/03/22: Résumé de la description sur les cartes projets (255 char)
 
 
+### images:
+#### screen sizes
+1920 x 1080 
+1024 x 768
+1080 x 810
+800 x 600
+812 x 375
+667 x 375
+
+#### mes images:
+Home:
+- kbd_1260x840 x1.5    = 1892 x 1260
+- kbd_1260x840         = 1260 x 840
+- kbd_1260x840 x0.75   = 945 x 630
+- kbd_1260x840 x0.5    = 630 x 420
+
 
 ## todo
 [ ] mobile:
     [ ] definir les media queries (card heigth 47vh par exemple)
-    
+    [ ] plusieures tailles d'images
+    [ ] regler l'image de background de la section home
+
 [ ] portfolio:
     [ ] lister les projets à mettre
     [ ] verifier les repositories et la version

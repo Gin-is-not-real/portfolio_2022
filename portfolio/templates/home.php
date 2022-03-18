@@ -5,7 +5,8 @@
         <div>
             <!-- for help to postion the <img> -->
         </div>
-        <img src="public/images/pexel_keyboard_large.jpg" alt="">
+        <!-- managed by css -->
+        <img src="" alt="">
     </div>
 
     <div class="void-header shaded"></div>

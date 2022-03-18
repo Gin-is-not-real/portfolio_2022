@@ -21,9 +21,18 @@
     width: 100%;
     height: 100%;
 }
+
 #home .bg-container img {
     width: 66vw;
-    height: 84vh;
+    min-width: 66vw;
+    height: 100vh;
+    min-height: 100vh;
+}
+#home .bg-container img {
+    background-image: url('../images/kbd_1260x840@1.5x.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
