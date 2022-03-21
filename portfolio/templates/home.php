@@ -6,7 +6,9 @@
             <!-- for help to postion the <img> -->
         </div>
         <!-- managed by css -->
-        <img src="" alt="">
+        <!-- <img src="" alt=""> -->
+
+        <img src="public/images/kbd_1260x840.png" alt="">
     </div>
 
     <div class="void-header shaded"></div>

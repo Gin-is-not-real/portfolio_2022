@@ -2,7 +2,8 @@
     <h1 class="anchor" id="anch-projects"></h1>
     
     <div class="bg-container">
-        <img src="public/images/bases/books_1920x1271.jpg" alt="">
+        <img src="public/images/book_1216x806.png" alt="">
+        <!-- <img src="" alt=""> -->
     </div>
 
     <header class="shaded">
