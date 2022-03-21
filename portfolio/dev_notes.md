@@ -9,15 +9,17 @@
 - 14/03/22: structure dossier, clean code et fix front fx
 - 15/03/22: optimisation de la recuperation des données json (js fetch le fichier json directement)
 - 16/03/22: fix et améliorations style et effets (header scroll effect, "show" plus clair)
-- 17/03/22: Résumé de la description sur les cartes projets (255 char)
+- 17/03/22: Résumé de la description sur les cartes projets (255 char) 
+    **bug ici**
+- 21/03/22: les images de background sont chargées en fonction de la taille de l'écran (JS)
 
 
 ### images:
-#### screen sizes
-1920 x 1080     1.5 
-1024 x 768      1
-1080 x 810      1
-800 x 600       0.75
+#### basic screen sizes
+1920 x 1080    => 1.5 
+1024 x 768     => 1
+1080 x 810     => 1
+800 x 600      => 0.75
 812 x 375
 667 x 375
 
@@ -33,10 +35,28 @@ Home:
 - books_1261x806 x0.75   = 912 x 604
 - books_1261x806 x0.5    = 600 x 400
 
+#### gestion:
+Comme j'ai mis les images directement dans le html et pas comme background (css), je ne peux pas me servir des media queries, je vais utiliser JS:
+
+    - choix image au chargement:    
+        - recuperer la taille de l'écran
+        - definir l'image à charger (taille) 
+
+    - choix image event resize ?    => NON car c'est la taille de l'écran qui compte
+
+    - resize:
+        - Il y a un seuil ou l'image est deformée
+        - Si je defini ce seuil via min-width dans le css, alors celui ci aussi doit étre defini en même temps que l'image et en fonction d'elle
+
+
+- ajout class img-bg
+- script js images.js:
+    - le script modifie la src de l'element img en fonction de la taille d'écran
+
 ## todo
 [ ] mobile:
     [ ] definir les media queries (card heigth 47vh par exemple)
-    [ ] plusieures tailles d'images
+    [ ] plusieures tailles d'images     
     [ ] regler l'image de background de la section home
 
 [ ] portfolio:

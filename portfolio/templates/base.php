@@ -31,5 +31,6 @@
 
 <script src="src/header.js"></script>
 <script src="src/projects.js"></script>
+<script src="src/images.js"></script>
 
 </html>
