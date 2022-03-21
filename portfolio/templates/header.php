@@ -1,7 +1,7 @@
 <header id="general-header" class="shaded">
 
     <figure id="main-logo">
-        <img src="public/images/smallFichier.svg" alt="" width="64" height="auto">
+        <img src="public/images/logo.svg" alt="" width="64" height="auto">
     </figure>
 
     <div>

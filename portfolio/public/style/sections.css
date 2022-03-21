@@ -4,12 +4,12 @@
 #home { 
     height: 84vh;
     /* background-color: #242424; */
-    background-color: rgba(17, 17, 17, 0.76);
+    /* background-color: rgba(17, 17, 17, 0.76); */
     z-index: -3;
 }
 
 
-/* HOME BACKGROUND
+/* HOME BACKGROUND */
 #home .bg-container {
     position: absolute;
     width: 100vw;
@@ -28,16 +28,19 @@
     min-height: 100vh;
     width: 66vw;
     height: 100vh;
-    background-image: url('../images/kbd_1260x840@1.5x.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-} */
+}
+
+/* 
+background-image: url('../images/kbd_1260x840@1.5x.png');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat; 
+*/
 
 
 /* CONTAINER */
 #home-container {
-    background-color: rgba(17, 17, 17, 0.87);
+    background-color: rgba(17, 17, 17, 0.66);
     color: white;
     height: 65vh;
     padding-top: 0.8em;
@@ -103,7 +106,7 @@
     background-color: black;
 }
 
-/* BACKGROUND
+/* BACKGROUND */
 #projects .bg-container {
     position: absolute;
     height: 84vh;
@@ -111,20 +114,10 @@
     justify-content: center;
     z-index: -1;
 }
-#home .bg-container img {
-    min-width: 66vw;
-    min-height: 100vh;
-    width: 66vw;
-    height: 100vh;
-    background-image: url('../images/books_1216x806@1.5x.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-} */
-/* #projects .bg-container img {
+#projects .bg-container img {
     width: 100vw;
     height:100vh;
-} */
+}
 
 #projects-container {
     max-width: 100vw;
