@@ -10,14 +10,15 @@ if(property_exists($project, "tags")) {
         $tags_str .= $value . ", ";
     }
     // remove ", " from the end of the string
-    substr($tags_str, 0, -2);
+    $tags_str = substr($tags_str, 0, -2);
 }
 
 
 // 230 chars max
+$max_chars = 200; 
 $description = $project->description;
-if(strlen($description) > 225) {
-    substr($description, 0, 255);
+if(strlen($description) > $max_chars) {
+    $description = substr($description, 0, $max_chars);
     $description .= " ...";
 }
 ?>

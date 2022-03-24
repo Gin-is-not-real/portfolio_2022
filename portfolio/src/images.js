@@ -27,7 +27,7 @@ let imageObjs = [imageHome, imageProjects];
 
 // test
 // let testScreenWidth = 800;
-// setMostAdaptedImages(imageObjs, defineMultiplicator(testScreenWidth));
+setMostAdaptedImages(imageObjs, defineMultiplicator(screen.width));
 
 
 /**

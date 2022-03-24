@@ -38,10 +38,14 @@ function displayProject(project) {
     show.querySelector('h3').textContent = project.title;
     show.querySelector('h4').textContent = "";
 
+    let tagsStr = "";
     if(project.tags !== undefined) {
         project.tags.forEach(tag => {
-            show.querySelector('h4').textContent += tag + ', ';
+            tagsStr += tag + ', ';
         });
+        
+        tagsStr = tagsStr.substring(0, tagsStr.length-2);
+        show.querySelector('h4').textContent = tagsStr;
     }
 
     show.querySelector('p').textContent = project.description;

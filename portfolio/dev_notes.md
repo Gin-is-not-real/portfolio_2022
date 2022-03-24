@@ -10,7 +10,7 @@
 - 15/03/22: optimisation de la recuperation des données json (js fetch le fichier json directement)
 - 16/03/22: fix et améliorations style et effets (header scroll effect, "show" plus clair)
 - 17/03/22: Résumé de la description sur les cartes projets (255 char) 
-    **bug ici**
+    - correction le 24/03/22
 - 21/03/22: les images de background sont chargées en fonction de la taille de l'écran (JS)
 
 
